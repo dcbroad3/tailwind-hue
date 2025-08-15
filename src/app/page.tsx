@@ -373,21 +373,27 @@ export default function Home() {
       </div>
       <div className="flex grow gap-2">
         <div className="flex grow flex-col basis-1/3">
-          <div>{over.name}</div>
-          <div className="grow bg-over-50"></div>
-          <div className="grow bg-over-100"></div>
-          <div className="grow bg-over-200"></div>
-          <div className="grow bg-over-300"></div>
-          <div className="grow bg-over-400"></div>
-          <div className="grow bg-over-500"></div>
-          <div className="grow bg-over-600"></div>
-          <div className="grow bg-over-700"></div>
-          <div className="grow bg-over-800"></div>
-          <div className="grow bg-over-900"></div>
-          <div className="grow bg-over-950"></div>
+          <div className="p-2 flex justify-between">
+            <span>{under.name}</span>
+            <span>{under.hue}</span>
+          </div>
+          <div className="grow bg-under-50"></div>
+          <div className="grow bg-under-100"></div>
+          <div className="grow bg-under-200"></div>
+          <div className="grow bg-under-300"></div>
+          <div className="grow bg-under-400"></div>
+          <div className="grow bg-under-500"></div>
+          <div className="grow bg-under-600"></div>
+          <div className="grow bg-under-700"></div>
+          <div className="grow bg-under-800"></div>
+          <div className="grow bg-under-900"></div>
+          <div className="grow bg-under-950"></div>
         </div>
         <div className="flex grow flex-col basis-1/3">
-          <div>custom</div>
+          <div className="p-2 flex justify-between">
+            <span>custom</span>
+            <span>{state}</span>
+          </div>
           <div className="grow bg-brand-50"></div>
           <div className="grow bg-brand-100"></div>
           <div className="grow bg-brand-200"></div>
@@ -401,18 +407,21 @@ export default function Home() {
           <div className="grow bg-brand-950"></div>
         </div>
         <div className="flex grow flex-col basis-1/3">
-          <div>{under.name}</div>
-          <div className="grow bg-under-50"></div>
-          <div className="grow bg-under-100"></div>
-          <div className="grow bg-under-200"></div>
-          <div className="grow bg-under-300"></div>
-          <div className="grow bg-under-400"></div>
-          <div className="grow bg-under-500"></div>
-          <div className="grow bg-under-600"></div>
-          <div className="grow bg-under-700"></div>
-          <div className="grow bg-under-800"></div>
-          <div className="grow bg-under-900"></div>
-          <div className="grow bg-under-950"></div>
+          <div className="p-2 flex justify-between">
+            <span>{over.name}</span>
+            <span>{over.hue}</span>
+          </div>
+          <div className="grow bg-over-50"></div>
+          <div className="grow bg-over-100"></div>
+          <div className="grow bg-over-200"></div>
+          <div className="grow bg-over-300"></div>
+          <div className="grow bg-over-400"></div>
+          <div className="grow bg-over-500"></div>
+          <div className="grow bg-over-600"></div>
+          <div className="grow bg-over-700"></div>
+          <div className="grow bg-over-800"></div>
+          <div className="grow bg-over-900"></div>
+          <div className="grow bg-over-950"></div>
         </div>
       </div>
     </main>
