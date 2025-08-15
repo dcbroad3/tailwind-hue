@@ -317,7 +317,7 @@ function getColor(hue: number): [Color, Color, Color] {
         return v.map((w, j) => {
           let underV = colors[under].variants[i][j];
           if (j === 2 && underV > w) underV -= 360;
-          return w + interpolate * (w - underV);
+          return Number((w + interpolate * (w - underV)).toFixed(4));
         }) as [number, number, number];
       }),
     },
@@ -359,7 +359,7 @@ export default function Home() {
 
   return (
     <main className="flex flex-col h-dvh">
-      <div className="flex">
+      <div className="flex py-2">
         <input
           type="range"
           min="0"
