@@ -1,0 +1,54 @@
+@import 'tailwindcss';
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme {
+  --color-brand-50: var(--color-brand-50);
+  --color-brand-100: var(--color-brand-100);
+  --color-brand-200: var(--color-brand-200);
+  --color-brand-300: var(--color-brand-300);
+  --color-brand-400: var(--color-brand-400);
+  --color-brand-500: var(--color-brand-500);
+  --color-brand-600: var(--color-brand-600);
+  --color-brand-700: var(--color-brand-700);
+  --color-brand-800: var(--color-brand-800);
+  --color-brand-900: var(--color-brand-900);
+  --color-brand-950: var(--color-brand-950);
+  --color-over-50: var(--color-over-50);
+  --color-over-100: var(--color-over-100);
+  --color-over-200: var(--color-over-200);
+  --color-over-300: var(--color-over-300);
+  --color-over-400: var(--color-over-400);
+  --color-over-500: var(--color-over-500);
+  --color-over-600: var(--color-over-600);
+  --color-over-700: var(--color-over-700);
+  --color-over-800: var(--color-over-800);
+  --color-over-900: var(--color-over-900);
+  --color-over-950: var(--color-over-950);
+  --color-under-50: var(--color-under-50);
+  --color-under-100: var(--color-under-100);
+  --color-under-200: var(--color-under-200);
+  --color-under-300: var(--color-under-300);
+  --color-under-400: var(--color-under-400);
+  --color-under-500: var(--color-under-500);
+  --color-under-600: var(--color-under-600);
+  --color-under-700: var(--color-under-700);
+  --color-under-800: var(--color-under-800);
+  --color-under-900: var(--color-under-900);
+  --color-under-950: var(--color-under-950);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
